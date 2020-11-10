@@ -1,4 +1,3 @@
-package fkd.java.hiberdog.domain;
 
 import javax.persistence.*;
 

@@ -1,11 +1,11 @@
-package fkd.java.hiberdog;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Map;
 import java.util.Random;
 
-import fkd.java.hiberdog.manager.FoodTableManager;
+
 
 public class MainHiberJpaClassDog {
     static float canDistance = new Random().nextFloat() * 10.25f + 65.75f;
@@ -198,11 +198,11 @@ public class MainHiberJpaClassDog {
     //-----------------------------------------------------------------------------------------------------------------------------------------//
     // 6. THROW method - the distance depends on: dog size, kind of food for morning and evening, and extra water
     public static float throwIt (String ds, String dfm, String playersName, String dfe, String dfw) {
-        DataBaseHandler dataBaseHandler = new DataBaseHandler();
+        FoodTableManager foodTableManager = new FoodTableManager();
         float distance = 0.0f;
-
+//  METHOD for SQL QUIRES  HIBERNATE-JPA
         {
-            int mixFoodId = dataBaseHandler.selectIdIf(dfm, dfe, dfw);
+            int mixFoodId = foodTableManager.getFoodSetIdJpa(dfm, dfe, dfw);
 
             if (mixFoodId > 1000 && mixFoodId < 2000) distance = (new Random().nextFloat() * (5.25f) + 70.75f);
             if (mixFoodId > 2000 && mixFoodId < 3000) distance = (new Random().nextFloat() * (10.25f) + 65.75f);
