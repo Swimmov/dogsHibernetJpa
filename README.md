@@ -1,9 +1,10 @@
 ## Prototype of a game called “DogsPooGolf”. 
 ### *Hibernate JPA version*
 ### *Project management tool - Maven*
+### *No database version `<link>` : <https://github.com/Swimmov/DogsPooGolf>*
+### *MySQL Database version `<link>` : <https://github.com/Swimmov/dogspoogolfDB>*
+### *Android Apk version `<link>` : <https://github.com/Swimmov/dogsApk>*
 
-No database version `<link>` : <https://github.com/Swimmov/DogsPooGolf>
-MySQL database version `<link>` : <https://github.com/Swimmov/dogspoogolfDB>
 changes from the previous version:
 
 **3 config files are added:**
